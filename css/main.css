@@ -5,9 +5,22 @@
 @viewport { width: device-width, scale: 1; }
 
 html {
-  moz-text-size-adjust: 100%
-  ms-text-size-adjust: 100%
-  o-text-size-adjust: 100%
-  webkit-text-size-adjust: 100%
-  text-size-adjust: 100%
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
+
+img {
+  display: inline-block;
+  width: 100%;
+}
+
+  img:nth-last-child(3){
+    display: none;
+  }
+
+  img:last-child {
+    display: none;
+  }
